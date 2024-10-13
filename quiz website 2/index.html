@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Player Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-Player Quiz</h1>
+        <div id="quiz-box">
+            <div id="timer">Time Left: <span id="time-left">50</span>s</div>
+            <div id="question"></div>
+            <div class="options">
+                <button class="option-btn" onclick="checkAnswer(0)"></button>
+                <button class="option-btn" onclick="checkAnswer(1)"></button>
+                <button class="option-btn" onclick="checkAnswer(2)"></button>
+                <button class="option-btn" onclick="checkAnswer(3)"></button>
+            </div>
+            <div id="progress">Question <span id="current-question">1</span> of <span id="total-questions"></span></div>
+            <div id="score">Score: <span id="score-value">0</span></div>
+        </div>
+        <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+       
+        <button id="hint-btn" onclick="showHint()">Get a Hint</button>
+        <div id="hint-box"></div>
+    </div>
+    <!-- Add a hint button below options -->
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
